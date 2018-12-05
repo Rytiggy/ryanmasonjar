@@ -25,7 +25,7 @@
       <div class="btn-group">
         <span class="badge badge-primary m-1" v-for="tech in project.technologys" :style="`background:${tech.color}`">{{tech.name}}</span>
       </div>
-      <small class="text-muted">{{project.date}}</small>
+      <!-- <small class="text-muted">{{project.date}}</small> -->
     </div>
   </div>
 </div>

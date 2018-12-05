@@ -25,13 +25,31 @@
         <project :project="proj" :index="index" />
       </div>
     </article>
+    
     <h2 class="text-center">Timeline</h2>
     <hr>
     <article class="row py-5 container">
-      <div class="py-2 d-inline" v-for="(event, index) in timeline" :id="`timeline${index}`" :key="index">
+      <div class="py-2 d-inline" v-for="(comapny, index) in timeline" :id="`timeline${index}`" :key="index">
+        <h3 class="mb-0">{{comapny.title}}</h3>
+        <div class="lead text-muted"> {{comapny.date}}</div>
+        <a :href="tag.url" target="_blank" class="badge badge-primary mb-1" v-for="(tag, i) in comapny.tags" :style="`background:${tag.color}`" :key="i">{{tag.name}}</a>
+        <!-- <p class="lead text-muted" v-html="comapny.description"></p> -->
+        <div class="py-2 d-inline" v-for="(position, key) in comapny.roles" :id="`timeline${key}`" :key="key">
+          <h4 class="mb-0 text-muted">{{position.title}}</h4>
+          <div class="lead text-muted"> {{position.date}}</div>
+          <!-- <a :href="company.url" target="_blank" class="badge badge-primary mb-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a> -->
+          <p class="lead text-muted" v-html="position.description"></p>
+        </div>
+      </div>   
+    </article>
+    
+    <h2 class="text-center">Education</h2>
+    <hr>
+    <article class="row py-5 container">
+      <div class="py-2 d-inline" v-for="(event, index) in education" :id="`timeline${index}`" :key="index">
         <h3 class="mb-0">{{event.title}}</h3>
         <div class="lead text-muted"> {{event.date}}</div>
-        <a :href="company.url" target="_blank" class="badge badge-primary mb-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a>
+        <a :href="tag.url" target="_blank" class="badge badge-primary mb-1" v-for="(tag, i) in event.tags" :style="`background:${tag.color}`" :key="i">{{tag.name}}</a>
         <p class="lead text-muted" v-html="event.description"></p>
       </div>
     </article>
@@ -95,71 +113,77 @@ export default {
         },
       ],
       timeline: [
-        {
-          title: 'Software Developer',
-          description: `Working at <i>221b</i> specializing in rapid incrimental prototyping, giving our clients beautiful software written using universally-agreed-upon best practices, and utilizing constant user-testing along the way to make sure we're always hitting the bullseye.`,
-          date: '2018 - Current',
-          compaies: [
+         {
+          title: '221b',
+          date: '2018 - Present',
+          tags: [
             {
               name: '221b',
               color: '#0d305a',
               url: 'http://221b.io',
             }
           ],
+          roles: [
+            {
+              title: 'Software Developer',
+              description: `Working at <i>221b</i> specializing in rapid incrimental prototyping, giving our clients beautiful software written using universally-agreed-upon best practices, and utilizing constant user-testing along the way to make sure we're always hitting the bullseye.`,
+              // date: '2018 - Current',
+            },
+          ]
         },
         {
-          title: 'Junior Software Developer',
-          description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
-          date: '2017 - 2018',
-          compaies: [
+          title: 'The Center for Open Science',
+          date: '2016 - 2018',
+          tags: [
             {
               name: 'COS',
               color: '#34BAEC',
               url: 'https://cos.io/',
             }
           ],
-        },
-        {
-          title: 'Developer Intern',
-          description: `Worked at the <i>Center for Open Science</i> on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.`,
-          date: '2016 - 2017',
-          compaies: [
+          roles: [
             {
-              name: 'COS',
-              color: '#34BAEC',
-              url: 'https://cos.io/',
-            }
-          ],
-        },
-        {
-          title: 'Lab Technician',
-          description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
-          date: '2016 - 2016',
-          compaies: [
+              title: 'Junior Software Developer',
+              description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
+              // date: '2017 - 2018',
+            },
             {
-              name: 'RIT ITS',
-              color: '#f06d30',
-              url: 'https://www.rit.edu/its/services/computer-labs',
-            }
-          ],
+              title: 'Developer Intern',
+              description: `Worked at the <i>Center for Open Science</i> on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.`,
+              // date: '2016 - 2017',
+            },
+          ]
         },
         {
-          title: 'Assistant System Administrator',
-          description: `Worked at the <i>College of Science</i> providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.`,
+          title: 'RIT - Information & Technology Services',
           date: '2015 - 2016',
-          compaies: [
+          tags: [
             {
               name: 'RIT ITS',
               color: '#f06d30',
-              url: 'https://www.rit.edu/its/assist-system-administrator',
+              url: 'https://www.rit.edu/its/',
             }
           ],
-        },
+          roles: [
+            {
+              title: 'Lab Technician',
+              description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
+              // date: '2016 - 2016',
+            },
+            {
+              title: 'Assistant System Administrator',
+              description: `Worked at the <i>College of Science</i> providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.`,
+              // date: '2015 - 2016',
+            }
+          ]
+        }
+      ],
+      education : [
         {
           title: 'Rochester Institute Of Technology',
-          description: `Received my BS from <i>Rochester Institute Of Technology</i> in Information Technology with an immersion in web and mobile design with a concentration in communications.`,
+          description: `Received my bachelor's degree from <i>Rochester Institute Of Technology</i> in Information Technology with an immersion in web and mobile design with a concentration in communications.`,
           date: '2013 - 2017',
-          compaies: [
+          tags: [
             {
               name: 'RIT',
               color: '#b56422',
