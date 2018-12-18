@@ -145,12 +145,12 @@ export default {
             {
               title: 'Junior Software Developer',
               description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
-              // date: '2017 - 2018',
+              date: '2017 - 2018',
             },
             {
               title: 'Developer Intern',
               description: `Worked at the <i>Center for Open Science</i> on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.`,
-              // date: '2016 - 2017',
+              date: '2016 - 2017',
             },
           ]
         },
@@ -168,12 +168,12 @@ export default {
             {
               title: 'Lab Technician',
               description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
-              // date: '2016 - 2016',
+              date: '2016 - 2016',
             },
             {
               title: 'Assistant System Administrator',
               description: `Worked at the <i>College of Science</i> providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.`,
-              // date: '2015 - 2016',
+              date: '2015 - 2016',
             }
           ]
         }
