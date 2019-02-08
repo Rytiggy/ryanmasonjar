@@ -208,6 +208,36 @@ export default {
           url: 'https://github.com/Rytiggy/Glance',
         },
         {
+          title: 'Repositories',
+          description: 'Repositories is a templating content management system (CMS) that allows for rapid development of single page applications (SPA) or multiple pages applications (MPA) using bootstrap 4.',
+          technologys: [
+            {
+              name: 'Vue',
+              color: '#41B883'
+            },
+            {
+              name: 'Nuxt',
+              color: '#3b806f'
+            },
+          ],
+          images: [
+            {
+              url: 'https://media.giphy.com/media/39sYXbpOI9aRTYyB5M/giphy.gif',
+              active: 'active',
+            }, 
+            {
+              url: 'https://media.giphy.com/media/4QFAdgWZg5Vebf9UL8/giphy.gif',
+              active: ''
+            },
+            {
+              url: 'https://media.giphy.com/media/5QYnjbwjKV9Nvgk364/giphy.gif',
+              active: ''
+            }
+          ],
+          date: 'Ongoing',
+          url: false,
+        },
+        {
           title: 'Talk About',
           description: 'Talk About is a dynamic vue component built to be eaily droped in to any codebase. Commenting made easy!',
           technologys: [
@@ -222,7 +252,7 @@ export default {
           ],
           images: [
             {
-              url: 'https://image.ibb.co/j58oNT/Screen_Shot_2018_07_12_at_1_31_04_PM.png',
+              url: 'https://media.giphy.com/media/2sh5pgtDVi2Id0m6ZR/giphy.gif',
               active: 'active',
             },
             {
@@ -275,7 +305,7 @@ export default {
             } 
           ],
           images: [{
-              url: 'https://image.ibb.co/ergcu8/Screen_Shot_2018_07_10_at_2_52_44_AM.png',
+              url: 'https://media.giphy.com/media/AFJJgSkjFyGbaDZNmj/giphy.gif',
               active: 'active',
             },
             {
