@@ -7,7 +7,7 @@
         <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
       </div>
       <p class="lead text-muted">
-        I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
+        I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there, I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
@@ -120,7 +120,7 @@ export default {
             {
               name: '221b',
               color: '#0d305a',
-              url: 'http://221b.io',
+              url: 'http://221b-dev.surge.sh/',
             }
           ],
           roles: [
@@ -168,7 +168,7 @@ export default {
             {
               title: 'Lab Technician',
               description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
-              date: '2016 - 2016',
+              date: '2016',
             },
             {
               title: 'Assistant System Administrator',
@@ -181,7 +181,7 @@ export default {
       education : [
         {
           title: 'Rochester Institute Of Technology',
-          description: `Received my bachelor's degree from <i>Rochester Institute Of Technology</i> in Information Technology with an immersion in web and mobile design with a concentration in communications.`,
+          description: `Received my bachelor's degree from <i>Rochester Institute Of Technology</i> in Information Technology with an immersion in web and mobile design and a concentration in communications.`,
           date: '2013 - 2017',
           tags: [
             {
@@ -269,7 +269,7 @@ export default {
         },
         {
           title: 'Public Access Submission System',
-          description: 'The Public Access Submission System (PASS) is a platform to assist researchers in complying with the access policies of their funders and institutions.',
+          description: 'The Public Access Submission System (PASS) is a platform built to assist researchers in complying with the access policies of their funders and institutions.',
           technologys: [{
               name: 'Ember',
               color: '#E04E39'
@@ -293,7 +293,7 @@ export default {
         },
         {
           title: 'Broken Sticks Hockey',
-          description: 'Broken Sticks Hockey was created to bring a great pick-up hockey experience to the Buffalo, NY area.',
+          description: 'The Broken Sticks Hockey website was created to bring a great pick-up hockey experience to the Buffalo, NY area.',
           technologys: [
             {
               name: 'HTML',
