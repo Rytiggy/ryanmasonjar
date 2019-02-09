@@ -1,7 +1,7 @@
 <template>
 <main role="main">
   <section class="container">
-    <article class="jumbotron bg-white text-center" style="height:700px; margin-top: 30vh">
+    <article class="jumbotron bg-white text-center" style="height:600px; margin-top: 30vh">
       <h1 class="jumbotron-heading mb-0 pb-0">Ryan Mason</h1>
       <div>
         <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
@@ -26,16 +26,16 @@
       </div>
     </article>
     
-    <h2 class="text-center">Timeline</h2>
+    <h2 class="text-center">Work Experience</h2>
     <hr>
     <article class="row py-5 container">
       <div class="py-2 d-inline" v-for="(comapny, index) in timeline" :id="`timeline${index}`" :key="index">
-        <h3 class="mb-0">{{comapny.title}}</h3>
-        <div class="lead text-muted"> {{comapny.date}}</div>
+        <h4 class="mb-0">{{comapny.title}}</h4>
+        <!-- <div class="lead text-muted"> {{comapny.date}}</div> -->
         <a :href="tag.url" target="_blank" class="badge badge-primary mb-1" v-for="(tag, i) in comapny.tags" :style="`background:${tag.color}`" :key="i">{{tag.name}}</a>
         <!-- <p class="lead text-muted" v-html="comapny.description"></p> -->
         <div class="py-2 d-inline" v-for="(position, key) in comapny.roles" :id="`timeline${key}`" :key="key">
-          <h4 class="mb-0 text-muted">{{position.title}}</h4>
+          <h5 class="mb-0 text-muted">{{position.title}}</h5>
           <div class="lead text-muted"> {{position.date}}</div>
           <!-- <a :href="company.url" target="_blank" class="badge badge-primary mb-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a> -->
           <p class="lead text-muted" v-html="position.description"></p>
@@ -47,7 +47,7 @@
     <hr>
     <article class="row py-5 container">
       <div class="py-2 d-inline" v-for="(event, index) in education" :id="`timeline${index}`" :key="index">
-        <h3 class="mb-0">{{event.title}}</h3>
+        <h4 class="mb-0">{{event.title}}</h4>
         <div class="lead text-muted"> {{event.date}}</div>
         <a :href="tag.url" target="_blank" class="badge badge-primary mb-1" v-for="(tag, i) in event.tags" :style="`background:${tag.color}`" :key="i">{{tag.name}}</a>
         <p class="lead text-muted" v-html="event.description"></p>
@@ -127,7 +127,7 @@ export default {
             {
               title: 'Software Developer',
               description: `Working at <i>221b</i> specializing in rapid incrimental prototyping, giving our clients beautiful software written using universally-agreed-upon best practices, and utilizing constant user-testing along the way to make sure we're always hitting the bullseye.`,
-              // date: '2018 - Current',
+              date: 'Feb 2018 - Current',
             },
           ]
         },
@@ -145,12 +145,12 @@ export default {
             {
               title: 'Junior Software Developer',
               description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
-              date: '2017 - 2018',
+              date: 'Jun 2017 - Jan 2018',
             },
             {
               title: 'Developer Intern',
               description: `Worked at the <i>Center for Open Science</i> on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.`,
-              date: '2016 - 2017',
+              date: 'May 2016 - Jun 2017',
             },
           ]
         },
@@ -168,12 +168,12 @@ export default {
             {
               title: 'Lab Technician',
               description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
-              date: '2016',
+              date: 'Jan 2016 - May 2016',
             },
             {
               title: 'Assistant System Administrator',
               description: `Worked at the <i>College of Science</i> providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.`,
-              date: '2015 - 2016',
+              date: 'Apr 2015 - Jan 2016',
             }
           ]
         }
@@ -351,5 +351,9 @@ export default {
 .person {
   width: 100px;
   height: 100px;
+}
+ 
+p {
+  font-size: 16px!important;
 }
 </style>
