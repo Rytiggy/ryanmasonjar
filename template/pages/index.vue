@@ -7,7 +7,7 @@
         <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
       </div>
       <p class="lead text-muted px-5 mx-5">
-        I graduated from Rochester Institute of Technology with my Bachelors in Information Technology. While there, I grew to love web design and development. Skilled with programming, documenting, testing, and bug fixing to produce the cleanest code. Proficient with a wide variety of web development frameworks. Always expanding my knowledge of user experience and interface design.
+        Graduated from Rochester Institute of Technology with a Bachelor of Science in Information Technology. While there, grew to love web design and development. Skilled in programming, documenting, testing, and bug fixing to produce clean and commented code. Proficient with a wide variety of web development frameworks. Proven track record of success with remote work.  Always expanding knowledge of user experience and interface design.
       </p>
       <p class="lead">
         <h2 class="text-muted">
@@ -36,7 +36,7 @@
         <!-- <p class="lead text-muted" v-html="comapny.description"></p> -->
         <div class="py-2 d-inline" v-for="(position, key) in comapny.roles" :id="`timeline${key}`" :key="key">
           <h5 class="mb-0 text-muted">{{position.title}}</h5>
-          <div class="lead text-muted"> {{position.date}}</div>
+          <div class="text-muted"> {{position.date}}</div>
           <!-- <a :href="company.url" target="_blank" class="badge badge-primary mb-1" v-for="(company, i) in event.compaies" :style="`background:${company.color}`" :key="i">{{company.name}}</a> -->
           <p class="lead text-muted" v-html="position.description"></p>
         </div>
@@ -48,7 +48,7 @@
     <article class="row py-5 container">
       <div class="py-2 d-inline" v-for="(event, index) in education" :id="`timeline${index}`" :key="index">
         <h4 class="mb-0">{{event.title}}</h4>
-        <div class="lead text-muted"> {{event.date}}</div>
+        <div class="text-muted"> {{event.date}}</div>
         <a :href="tag.url" target="_blank" class="badge badge-primary mb-1" v-for="(tag, i) in event.tags" :style="`background:${tag.color}`" :key="i">{{tag.name}}</a>
         <p class="lead text-muted" v-html="event.description"></p>
       </div>
@@ -126,7 +126,7 @@ export default {
           roles: [
             {
               title: 'Software Developer',
-              description: `Working at <i>221b</i> specializing in rapid incrimental prototyping, giving our clients beautiful software written using universally-agreed-upon best practices, and utilizing constant user-testing along the way to make sure we're always hitting the bullseye.`,
+              description: `Provides application development and consulting services to clients including Johns Hopkins University, Notre Dame, and Databrary to develop products from concept to delivery while expressing complex ideas clearly and succinctly. Specializes in rapid incremental prototyping and delivering beautifully written software to our clients. Focuses on using universally agreed upon best practices and utilizing constant user-testing along the way to continually deliver high quality products. Working with frameworks such as Ember.js, Vue.js, and Nuxt.js. Proficient with Node.js to build web scrapers with puppeteer (headless Chrome node API). Presented “Decentralizing SHARE & Research” at the <a href="https://cnifall2018membershipmeeting.sched.com/event/IOXb" target="_blank">Coalition for Networked Information Membership Conference</a> (CNI).`,
               date: 'Feb 2018 - Current',
             },
           ]
@@ -144,12 +144,12 @@ export default {
           roles: [
             {
               title: 'Junior Software Developer',
-              description: `Worked at the <i>Center for Open Science</i> on the Labs team using rapid incremental prototyping to create experimental products.`,
+              description: `Worked on the Labs team using rapid incremental prototyping to create experimental products, such as Public Access Submission System and Open Science Framework Pages.  Developed proficiency in Ember.js while interfacing with a variety of databases including Firebase and Django.`,
               date: 'Jun 2017 - Jan 2018',
             },
             {
               title: 'Developer Intern',
-              description: `Worked at the <i>Center for Open Science</i> on developing web applications, collaborating with teams of developers, working with Ember.js, and Django REST API frameworks.`,
+              description: `Developed web applications following software design principles, collaborating with teams of developers, working with Ember.js and Django REST API frameworks.`,
               date: 'May 2016 - Jun 2017',
             },
           ]
@@ -167,7 +167,7 @@ export default {
           roles: [
             {
               title: 'Lab Technician',
-              description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
+              description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support to students, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
               date: 'Jan 2016 - May 2016',
             },
             {
@@ -181,8 +181,8 @@ export default {
       education : [
         {
           title: 'Rochester Institute Of Technology',
-          description: `Received my bachelor's degree from <i>Rochester Institute Of Technology</i> in Information Technology with an immersion in web and mobile design and a concentration in communications.`,
-          date: '2013 - 2017',
+          description: `Received a Bachelor's degree from Rochester Institute of Technology in Information Technology with an immersion in Web and Mobile Design and a concentration in Communications.`,
+          date: 'Aug 2013 - May 2017',
           tags: [
             {
               name: 'RIT',
@@ -195,11 +195,17 @@ export default {
       projects: [
         {
           title: 'Glance',
-          description: 'Glance is a solution for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!',
-          technologys: [{
-            name: 'Fitbit SDK',
-            color: '#00B0B9'
-          }, ],
+          description: 'Glance is a application for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!',
+          technologys: [
+            {
+              name: 'Fitbit SDK',
+              color: '#00B0B9'
+            }, 
+            {
+              name: 'Javascript',
+              color: '#efd65c'
+            } 
+          ],
           images: [{
             url: 'https://image.ibb.co/fbiG9U/versa-Ionic.png',
             active: 'active',
@@ -209,7 +215,7 @@ export default {
         },
         {
           title: 'Repositories',
-          description: 'Repositories is a templating content management system (CMS) that allows for rapid development of single page applications (SPA) or multiple pages applications (MPA) using bootstrap 4.',
+          description: 'Repositories is a templating content management system (CMS) that allows for rapid development of single page applications (SPA) or multiple page applications (MPA) using Bootstrap 4.',
           technologys: [
             {
               name: 'Vue',
@@ -239,7 +245,7 @@ export default {
         },
         {
           title: 'Talk About',
-          description: 'Talk About is a dynamic vue component built to be eaily droped in to any codebase. Commenting made easy!',
+          description: 'Talk About is a dynamic vue component built to be easily dropped in to any codebase. Commenting made easy!',
           technologys: [
             {
               name: 'Vue',
@@ -275,7 +281,7 @@ export default {
               color: '#E04E39'
             },
             {
-              name: 'Fadora',
+              name: 'Fedora',
               color: '#c7353c'
             },
           ],
@@ -293,7 +299,7 @@ export default {
         },
         {
           title: 'Broken Sticks Hockey',
-          description: 'The Broken Sticks Hockey website was created to bring a great pick-up hockey experience to the Buffalo, NY area.',
+          description: 'Designed and developed the Broken Sticks Hockey website to offer a great pick-up hockey experience to the Buffalo, NY area. Implemented in Bootstrap 4 and is hosted on GitHub Pages.',
           technologys: [
             {
               name: 'HTML',
@@ -318,7 +324,7 @@ export default {
         },
         {
           title: 'OSF Pages',
-          description: 'OSF Pages is an Open Science Framework (OSF) addon and website builder that helps OSF users build beautiful websites very quickly using their existing project details.',
+          description: 'OSF Pages is an Open Science Framework (OSF) add-on and website builder that helps OSF users build beautiful websites very quickly using their existing project details.',
           technologys: [
           {
             name: 'Ember',
@@ -330,11 +336,15 @@ export default {
           }
         ],
           images: [{
-              url: 'https://image.ibb.co/hok97T/Screen_Shot_2018_07_10_at_3_04_00_AM.png',
+              url: 'https://media.giphy.com/media/5vUz649RO6dKqCuo0k/giphy.gif',
               active: 'active',
             },
             {
-              url: 'https://image.ibb.co/haWP7T/Screen_Shot_2018_07_10_at_3_09_16_AM.png',
+              url: 'https://media.giphy.com/media/QMKntqhT23aV2KjGtO/giphy.gif',
+              active: '',
+            },
+            {
+              url: 'https://media.giphy.com/media/7NISJvZeh48MeNvTNe/giphy.gif',
               active: '',
             }
           ],
