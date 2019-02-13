@@ -6,7 +6,7 @@
       <div>
         <small class="badge badge-primary mb-2 text-white" style="unicode-bidi: bidi-override; direction: rtl;">moc.liamg@rajnosamnayr</small>
       </div>
-      <p class="lead text-muted px-5 mx-5">
+      <p class="lead text-muted">
         Graduated from Rochester Institute of Technology with a Bachelor of Science in Information Technology. While there, grew to love web design and development. Skilled in programming, documenting, testing, and bug fixing to produce clean and commented code. Proficient with a wide variety of web development frameworks. Proven track record of success with remote work.  Always expanding knowledge of user experience and interface design.
       </p>
       <p class="lead">
