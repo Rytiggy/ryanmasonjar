@@ -6,17 +6,18 @@
     </div>
     <q-list>
       <q-item
-        v-for="(job ,index) in timeline"
+        v-for="(event ,index) in timeline"
         :key="index"
       >
-        <q-item-section thumbnail top>
-          <a class="q-pt-sm" :href="job.url" target="_blank">
-            <img :src="job.logo">
+        <q-item-section class="gt-xs" thumbnail top>
+          <a class="q-pt-sm" :href="event.url" target="_blank">
+            <img :src="event.logo">
           </a>
         </q-item-section>
         <q-item-section>
+          <img class="lt-sm timeline-logo" :src="event.logo">
           <div
-            v-for="(role ,r) in  job.roles"
+            v-for="(role ,r) in  event.roles"
             :key="r"
           >
             <div class="text-h6 text-blue-grey-8">
@@ -43,5 +44,9 @@ export default {
 .q-item__section--thumbnail img {
     width: 100px;
     height: unset;
+}
+
+.timeline-logo {
+  width:100px;
 }
 </style>
