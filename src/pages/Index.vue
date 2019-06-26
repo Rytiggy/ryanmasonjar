@@ -132,7 +132,7 @@ export default {
           url: "http://www.rit.edu/",
           roles: [
             {
-              title: "Information Technology",
+              title: "B.S. Information Technology",
               description: `Received a Bachelor's degree from Rochester Institute of Technology in Information Technology with an immersion in Web and Mobile Design and a concentration in Communications.`,
               date: "Aug 2013 - May 2017",
             },
