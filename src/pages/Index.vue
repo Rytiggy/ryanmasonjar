@@ -23,7 +23,7 @@
           success with remote work. Always expanding knowledge of user
           experience and interface design.
         </p>
-        <a href="https://www.linkedin.com/in/ryanmichaelmason/" target="_blank">
+        <a href="https://www.linkedin.com/in/ryanmasonjar/" target="_blank">
           <i class="fab fa-linkedin-in text-h4 q-px-sm" style="color:#0077b5"></i>
         </a>
         <a href="https://github.com/Rytiggy/" target="_blank">
