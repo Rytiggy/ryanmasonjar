@@ -163,7 +163,7 @@ export default {
             }
           ],
           date: "Ongoing",
-          url: "https://github.com/Rytiggy/Glance"
+          url: "https://glancewatchface.com/"
         },
         {
           title: "Public Access Submission System",
