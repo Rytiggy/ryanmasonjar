@@ -161,10 +161,10 @@ export default {
               url: "https://image.ibb.co/fbiG9U/versa-Ionic.png",
             },
             {
-              url: "../statics/glance/header.jpg",
+              url: "./statics/glance/header.jpg",
             },
             {
-              url: "../statics/glance/gallery11.jpg",
+              url: "./statics/glance/gallery11.jpg",
             }
           ],
           date: "Ongoing",
@@ -274,18 +274,18 @@ export default {
           ],
           images: [
             {
-              url: "../statics/admail/smartgroups.png",
+              url: "./statics/admail/smartgroups.png",
             },
             {
               url:
-                "../statics/admail/groupMovement.png",
+                "./statics/admail/groupMovement.png",
             },
             {
-              url: "../statics/admail/namingSmartgroup.png",
+              url: "./statics/admail/namingSmartgroup.png",
             },
             {
               url:
-                "../statics/admail/AccuTrak.png",
+                "./statics/admail/AccuTrak.png",
             },
 
 
