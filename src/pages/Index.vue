@@ -159,7 +159,12 @@ export default {
           images: [
             {
               url: "https://image.ibb.co/fbiG9U/versa-Ionic.png",
-              active: "active"
+            },
+            {
+              url: "../statics/glance/header.jpg",
+            },
+            {
+              url: "../statics/glance/gallery11.jpg",
             }
           ],
           date: "Ongoing",
@@ -257,39 +262,36 @@ export default {
           url: "https://github.com/cos-labs/osfpages"
         },
         {
-          title: "Talk About",
+          title: "AdMail",
           description:
-            "Talk About is a dynamic vue component built to be easily dropped in to any codebase. Commenting made easy!",
+            "Redesigned select pages for our client in an effort to modernize their website. Designed wireframes and focused on material design. Updated major version of Ember (v2.8 -> v3.10).",
           technologys: [
             {
-              name: "Vue",
-              color: "#41B883",
-              textColor: "#ffffff"
-            },
-            {
-              name: "Nuxt",
-              color: "#3b806f",
+              name: "Ember",
+              color: "#E04E39",
               textColor: "#ffffff"
             }
           ],
           images: [
             {
-              url: "https://media.giphy.com/media/2sh5pgtDVi2Id0m6ZR/giphy.gif",
-              active: "active"
+              url: "../statics/admail/smartgroups.png",
             },
             {
               url:
-                "https://image.ibb.co/nLyYp8/Screen_Shot_2018_07_12_at_1_32_34_PM.png",
-              active: ""
+                "../statics/admail/groupMovement.png",
+            },
+            {
+              url: "../statics/admail/namingSmartgroup.png",
             },
             {
               url:
-                "https://image.ibb.co/eVz1bo/Screen_Shot_2018_07_12_at_1_32_24_PM.png",
-              active: ""
-            }
+                "../statics/admail/AccuTrak.png",
+            },
+
+
           ],
-          date: "5-2-18",
-          url: "http://talk-about.surge.sh/#/"
+          date: "5-2-19",
+          url: ""
         },
         {
           title: "Broken Sticks Hockey",
@@ -354,6 +356,41 @@ export default {
           date: "Ongoing",
           url: false
         },
+        {
+          title: "Talk About",
+          description:
+            "Talk About is a dynamic vue component built to be easily dropped in to any codebase. Commenting made easy!",
+          technologys: [
+            {
+              name: "Vue",
+              color: "#41B883",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Nuxt",
+              color: "#3b806f",
+              textColor: "#ffffff"
+            }
+          ],
+          images: [
+            {
+              url: "https://media.giphy.com/media/2sh5pgtDVi2Id0m6ZR/giphy.gif",
+              active: "active"
+            },
+            {
+              url:
+                "https://image.ibb.co/nLyYp8/Screen_Shot_2018_07_12_at_1_32_34_PM.png",
+              active: ""
+            },
+            {
+              url:
+                "https://image.ibb.co/eVz1bo/Screen_Shot_2018_07_12_at_1_32_24_PM.png",
+              active: ""
+            }
+          ],
+          date: "5-2-18",
+          url: "http://talk-about.surge.sh/#/"
+        }
       ]
     };
   }

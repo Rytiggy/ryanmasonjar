@@ -1,7 +1,15 @@
 <template>
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-sm">
     <q-card flat bordered>
-      <q-carousel animated v-model="slide" arrows navigation infinite class="project-img">
+      <q-carousel 
+        autoplay
+        animated
+        v-model="slide"
+        navigation
+        infinite 
+        class="project-img"
+        control-color="grey-6"
+      >
         <q-carousel-slide
           v-for="(image, i) in project.images"
           :key="i"
