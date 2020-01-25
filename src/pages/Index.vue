@@ -4,7 +4,7 @@
     <section class="text-center q-my-xl q-py-xl">
       <div>
         <q-avatar size="150px">
-          <img src="../statics/ryanmason.jpeg">
+          <img src="../statics/ryanmason.jpeg" />
         </q-avatar>
         <div class="text-h3 text-weight-bold text-blue-grey-9">Ryan Mason</div>
         <q-chip class="q-mb-md">
@@ -24,7 +24,10 @@
           experience and interface design.
         </p>
         <a href="https://www.linkedin.com/in/ryanmasonjar/" target="_blank">
-          <i class="fab fa-linkedin-in text-h4 q-px-sm" style="color:#0077b5"></i>
+          <i
+            class="fab fa-linkedin-in text-h4 q-px-sm"
+            style="color:#0077b5"
+          ></i>
         </a>
         <a href="https://github.com/Rytiggy/" target="_blank">
           <i class="fab fa-github text-h4 q-px-sm" style="color:#212529"></i>
@@ -134,12 +137,48 @@ export default {
             {
               title: "B.S. Information Technology",
               description: `Received a Bachelor's degree from Rochester Institute of Technology in Information Technology with an immersion in Web and Mobile Design and a concentration in Communications.`,
-              date: "Aug 2013 - May 2017",
-            },
-          ],
+              date: "Aug 2013 - May 2017"
+            }
+          ]
         }
       ],
       projects: [
+        {
+          title: "Lumin Dashboard",
+          description:
+            "Rebuilt and redesigned the Lumin energy management dashboard allowing users to control their homes circuits from a web portal or natively on IOS or Android apps.",
+          technologys: [
+            {
+              name: "Quasar",
+              color: "#027be3",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Cordova",
+              color: "#4dc2e4",
+              textColor: "#000000"
+            }
+          ],
+          images: [
+            {
+              url: "statics/projects/lumin01.png"
+            },
+            {
+              url: "statics/projects/lumin03.png"
+            },
+            {
+              url: "statics/projects/lumin05.png"
+            },
+            {
+              url: "statics/projects/lumin02.png"
+            },
+            {
+              url: "statics/projects/lumin04.png"
+            }
+          ],
+          date: "5-01-19",
+          url: "https://app.luminsmart.com/"
+        },
         {
           title: "Glance",
           description:
@@ -158,13 +197,13 @@ export default {
           ],
           images: [
             {
-              url: "https://image.ibb.co/fbiG9U/versa-Ionic.png",
+              url: "statics/projects/glance01.png"
             },
             {
-              url: "./statics/glance/header.jpg",
+              url: "statics/projects/header.jpg"
             },
             {
-              url: "./statics/glance/gallery11.jpg",
+              url: "statics/projects/gallery11.jpg"
             }
           ],
           date: "Ongoing",
@@ -173,7 +212,7 @@ export default {
         {
           title: "Public Access Submission System",
           description:
-            "The Public Access Submission System (PASS) is a platform built to assist researchers in complying with the access policies of their funders and institutions.",
+            "The Public Access Submission System is a platform to assist researchers in complying with the policies of their funders and institutions.",
           technologys: [
             {
               name: "Ember",
@@ -188,110 +227,16 @@ export default {
           ],
           images: [
             {
-              url: "https://image.ibb.co/efq6Mo/pass_ui.png",
+              url: "statics/projects/pass_ui.png",
               active: "active"
             },
             {
-              url: "https://image.ibb.co/emdqE8/image1.png",
+              url: "statics/projects/image1.png",
               active: ""
             }
           ],
           date: "6-30-18",
           url: "https://pass.jhu.edu/"
-        },
-        {
-          title: "Hotel Finder",
-          description:
-            "Find and locate hotels with a simple click of a button. Clean UI focused on material design built on Leaflet.js. Sharable URL's for easy sharing of hotles you find!",
-          technologys: [
-            {
-              name: "Quasar",
-              color: "#027be3",
-              textColor: "#ffffff"
-            },
-            {
-              name: "Express",
-              color: "#e2e4e6",
-              textColor: "#494646"
-            }
-          ],
-          images: [
-            {
-              url:
-                "https://i.ibb.co/4jGcSVH/Screen-Shot-2019-06-24-at-2-39-21-PM.png"
-            },
-            {
-              url: 
-                "https://i.ibb.co/s90k94j/Screen-Shot-2019-06-25-at-7-02-44-PM.png"
-            }
-          ],
-          date: "6-30-18",
-          url: "http://hotelfinder.surge.sh/#/"
-        },
-                {
-          title: "OSF Pages",
-          description:
-            "OSF Pages is an Open Science Framework (OSF) add-on and website builder that helps OSF users build beautiful websites very quickly using their existing project details.",
-          technologys: [
-            {
-              name: "Ember",
-              color: "#E04E39",
-              textColor: "#ffffff"
-            },
-            {
-              name: "Django",
-              color: "#152c1f",
-              textColor: "#ffffff"
-            }
-          ],
-          images: [
-            {
-              url: "https://media.giphy.com/media/5vUz649RO6dKqCuo0k/giphy.gif",
-              active: "active"
-            },
-            {
-              url: "https://media.giphy.com/media/QMKntqhT23aV2KjGtO/giphy.gif",
-              active: ""
-            },
-            {
-              url: "https://media.giphy.com/media/7NISJvZeh48MeNvTNe/giphy.gif",
-              active: ""
-            }
-          ],
-          date: "2-01-18",
-          url: "https://github.com/cos-labs/osfpages"
-        },
-        {
-          title: "AdMail",
-          description:
-            "Redesigned select pages for our client in an effort to modernize their website. Designed wireframes and focused on material design. Updated major version of Ember (v2.8 -> v3.10).",
-          technologys: [
-            {
-              name: "Ember",
-              color: "#E04E39",
-              textColor: "#ffffff"
-            }
-          ],
-          images: [
-            {
-              url: "./statics/admail/smartgroups.png",
-            },
-            {
-              url:
-                "./statics/admail/groupMovement.png",
-            },
-            {
-              url: "./statics/admail/namingSmartgroup.png",
-            },
-            {
-              url:
-                "./statics/admail/AccuTrak.png",
-            },
-
-
-          ],
-          date: "5-2-19",
-          url: ""
         },
         {
           title: "Broken Sticks Hockey",
@@ -311,50 +256,93 @@ export default {
           ],
           images: [
             {
-              url: "https://media.giphy.com/media/AFJJgSkjFyGbaDZNmj/giphy.gif",
-              active: "active"
-            },
-            {
-              url:
-                "https://image.ibb.co/f3481o/Screen_Shot_2018_07_10_at_2_54_08_AM.png",
-              active: ""
+              url: "statics/projects/bsh.png"
             }
           ],
           date: "3-08-18",
           url: "http://www.brokenstickshockey.com/"
         },
         {
-          title: "Repositories",
+          title: "OSF Pages",
           description:
-            "Repositories is a templating content management system (CMS) that allows for rapid development of single page applications (SPA) or multiple page applications (MPA) using Bootstrap 4.",
+            "OSF Pages is an Open Science Framework (OSF) add-on and website builder that helps OSF users build beautiful websites very quickly using their existing project details.",
           technologys: [
             {
-              name: "Vue",
-              color: "#41B883",
+              name: "Ember",
+              color: "#E04E39",
               textColor: "#ffffff"
             },
             {
-              name: "Nuxt",
-              color: "#3b806f",
+              name: "Django",
+              color: "#152c1f",
               textColor: "#ffffff"
             }
           ],
           images: [
             {
-              url: "https://media.giphy.com/media/39sYXbpOI9aRTYyB5M/giphy.gif",
-              active: "active"
+              url: "statics/projects/osfPages01.gif"
             },
             {
-              url: "https://media.giphy.com/media/4QFAdgWZg5Vebf9UL8/giphy.gif",
-              active: ""
-            },
-            {
-              url: "https://media.giphy.com/media/5QYnjbwjKV9Nvgk364/giphy.gif",
-              active: ""
+              url: "statics/projects/osfPages02.png"
             }
           ],
-          date: "Ongoing",
-          url: false
+          date: "2-01-18",
+          url: "https://github.com/cos-labs/osfpages"
+        },
+        {
+          title: "AdMail",
+          description:
+            "Redesigned select pages for our client in an effort to modernize their website. Designed wireframes and focused on material design. Updated major version of Ember (v2.8 -> v3.10).",
+          technologys: [
+            {
+              name: "Ember",
+              color: "#E04E39",
+              textColor: "#ffffff"
+            }
+          ],
+          images: [
+            {
+              url: "statics/projects/smartgroups.png"
+            },
+            {
+              url: "statics/projects/groupMovement.png"
+            },
+            {
+              url: "statics/projects/namingSmartgroup.png"
+            },
+            {
+              url: "statics/projects/AccuTrak.png"
+            }
+          ],
+          date: "5-2-19",
+          url: ""
+        },
+        {
+          title: "Hotel Finder",
+          description:
+            "Find and locate hotels with a simple click of a button. Clean UI focused on material design built on Leaflet.js. Sharable URL's for easy sharing of hotles you find!",
+          technologys: [
+            {
+              name: "Quasar",
+              color: "#027be3",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Express",
+              color: "#e2e4e6",
+              textColor: "#494646"
+            }
+          ],
+          images: [
+            {
+              url: "statics/projects/hotelFinder01.png"
+            },
+            {
+              url: "statics/projects/hotelFinder02.png"
+            }
+          ],
+          date: "6-30-18",
+          url: "http://hotelfinder.surge.sh/#/"
         },
         {
           title: "Talk About",
@@ -374,18 +362,10 @@ export default {
           ],
           images: [
             {
-              url: "https://media.giphy.com/media/2sh5pgtDVi2Id0m6ZR/giphy.gif",
-              active: "active"
+              url: "statics/projects/talkabout02.png"
             },
             {
-              url:
-                "https://image.ibb.co/nLyYp8/Screen_Shot_2018_07_12_at_1_32_34_PM.png",
-              active: ""
-            },
-            {
-              url:
-                "https://image.ibb.co/eVz1bo/Screen_Shot_2018_07_12_at_1_32_24_PM.png",
-              active: ""
+              url: "statics/projects/talkabout.png"
             }
           ],
           date: "5-2-18",

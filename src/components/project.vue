@@ -1,21 +1,23 @@
 <template>
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 q-pa-sm">
     <q-card flat bordered>
-      <q-carousel 
+      <q-carousel
         autoplay
         animated
         v-model="slide"
         navigation
-        infinite 
+        infinite
         class="project-img"
         control-color="grey-6"
       >
         <q-carousel-slide
           v-for="(image, i) in project.images"
           :key="i"
+          class="q-pa-none overflow-none"
           :name="i"
-          :img-src="image.url"
-        />
+        >
+          <q-img class="full-width q-pa-none" :src="image.url" />
+        </q-carousel-slide>
       </q-carousel>
       <q-card-section>
         <div v-if="project.url" class="text-h5">
@@ -23,10 +25,15 @@
             :href="project.url"
             target="_blank"
             class="project-title text-weight-light text-blue-grey-9"
-          >{{project.title}}</a>
+            >{{ project.title }}</a
+          >
         </div>
-        <div v-else class="text-h5 text-weight-light text-blue-grey-9">{{project.title}}</div>
-        <span class="text-weight-light text-blue-grey-9">{{ project.description }}</span>
+        <div v-else class="text-h5 text-weight-light text-blue-grey-9">
+          {{ project.title }}
+        </div>
+        <span class="text-weight-light text-blue-grey-9">{{
+          project.description
+        }}</span>
       </q-card-section>
       <q-card-section>
         <q-badge
@@ -34,8 +41,15 @@
           :key="t"
           :color="technology.color"
           class="q-mr-sm text-weight-medium"
-          :style="'background:' + technology.color + ';' + 'color:' + technology.textColor"
-        >{{ technology.name }}</q-badge>
+          :style="
+            'background:' +
+              technology.color +
+              ';' +
+              'color:' +
+              technology.textColor
+          "
+          >{{ technology.name }}</q-badge
+        >
       </q-card-section>
     </q-card>
   </div>
@@ -65,5 +79,8 @@ export default {
 }
 .project-title:hover {
   text-decoration: underline;
+}
+.overflow-none {
+  overflow: hidden;
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h4 class="text-center text-weight-bold text-blue-grey-8 q-mb-sm">Projects</h4>
+    <h4 class="text-center text-weight-bold text-blue-grey-8 q-mb-sm">
+      Projects
+    </h4>
     <div class="row projects">
       <q-separator color="blue-grey-2" class="col-12 q-mb-lg" />
       <project
