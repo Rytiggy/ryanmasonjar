@@ -73,7 +73,7 @@ export default {
             {
               title: "Senior Software Engineer",
               description: `Responsible for the user interface and frontend development of the Projector web extension.`,
-              date: "2020 - Present"
+              date: "Jan 2020 - Present"
             }
           ]
         },
