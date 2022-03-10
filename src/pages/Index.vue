@@ -86,7 +86,7 @@ export default {
             {
               title: "Senior UI/UX Engineer",
               description: `Leads the development and design of the Lumin web and mobile applications.`,
-              date: "October 2021 - Present"
+              date: "Oct 2021 - Present"
             },
             {
               title: "UI/UX Engineer",
