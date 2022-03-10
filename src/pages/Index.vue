@@ -66,12 +66,12 @@ export default {
       timeline: [
         {
           title: "Projector",
-          date: "2020 - Present",
+          date: "Jan 2020 - Present",
           logo: "./statics/projector.png",
           url: "https://projectorsoft.com/",
           roles: [
             {
-              title: "UI/UX Engineer",
+              title: "Senior Software Engineer",
               description: `Responsible for the user interface and frontend development of the Projector web extension.`,
               date: "2020 - Present"
             }
@@ -79,14 +79,14 @@ export default {
         },
         {
           title: "Lumin",
-          date: "2019 - Present",
+          date: "July 2019 - Present",
           logo: "./statics/lumin.png",
           url: "https://www.luminsmart.com/",
           roles: [
             {
               title: "Senior UI/UX Engineer",
               description: `Leads the development and design of the Lumin web and mobile applications.`,
-              date: "October 2021 - Current"
+              date: "October 2021 - Present"
             },
             {
               title: "UI/UX Engineer",
