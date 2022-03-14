@@ -72,7 +72,7 @@ export default {
           roles: [
             {
               title: "Senior Software Engineer",
-              description: `Responsible for the user interface and frontend development of the Projector web extension.`,
+              description: `Responsible for the frontend development of the Projector web extension.`,
               date: "Jan 2020 - Present"
             }
           ]
@@ -91,7 +91,7 @@ export default {
             {
               title: "UI/UX Engineer",
               description: `Responsible for the development of the user experience and user interface for the Lumin Energy Management Platform and other Company products.`,
-              date: "July 2019 - October 2021"
+              date: "July 2019 - Oct 2021"
             }
           ]
         },
