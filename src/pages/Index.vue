@@ -9,32 +9,23 @@
         <div class="text-h3 text-weight-bold text-blue-grey-9">Ryan Mason</div>
         <q-chip class="q-mb-md">
           <q-avatar icon="email" color="blue" text-color="white" />
-          <span class="email text-blue-grey-9">moc.liamg@rajnosamnayr</span>
+          <span class="email text-blue-grey-9">ryanmasonjar@gmail.com</span>
         </q-chip>
-        <!-- <q-badge class="q-mb-md" color="blue">
-          <span class="email text-weight-medium">moc.liamg@rajnosamnayr</span>
-        </q-badge> -->
+
         <p class="about-me text-weight-light text-blue-grey-9">
-          Graduated from Rochester Institute of Technology with a Bachelor of
-          Science in Information Technology. While there, grew to love web
-          design and development. Skilled in programming, documenting, testing,
-          and bug fixing to produce clean and commented code. Proficient with a
-          wide variety of web development frameworks. Proven track record of
-          success with remote work. Always expanding knowledge of user
-          experience and interface design.
+          Principal software engineer with a deep passion for building applications that solve real problems for real
+          people. Deep expertise across web, iOS, and Android, with a proven track record of taking products from
+          concept to delivery, including multiple apps shipped to the App Store and Google Play. Brings experience
+          designing interfaces that help people understand and manage complex information. Works independently,
+          collaborates well remotely, mentors other engineers, and is always pushing to learn what's next.
         </p>
         <a href="https://www.linkedin.com/in/ryanmasonjar/" target="_blank">
-          <i
-            class="fab fa-linkedin-in text-h4 q-px-sm"
-            style="color:#0077b5"
-          ></i>
+          <i class="fab fa-linkedin-in text-h4 q-px-sm" style="color:#0077b5"></i>
         </a>
         <a href="https://github.com/Rytiggy/" target="_blank">
           <i class="fab fa-github text-h4 q-px-sm" style="color:#212529"></i>
         </a>
-        <a href="https://twitter.com/ryanmasonjar" target="_blank">
-          <i class="fab fa-twitter text-h4 q-px-sm" style="color:#1da1f2"></i>
-        </a>
+
       </div>
     </section>
     <!-- Projects -->
@@ -64,10 +55,43 @@ export default {
   data() {
     return {
       timeline: [
+
+        {
+          title: "ABB",
+          date: "July 2019 - Present",
+          logo: new URL('../statics/abb.svg', import.meta.url).href,
+          url: "https://abb.com",
+          roles: [
+            {
+              title: "Principal Software Engineer",
+              description: `<ul><li>Joined ABB following the acquisition of Lumin, bringing deep product knowledge and continuing development of the platform across web, iOS, and Android using Vue, TypeScript, and Capacitor, serving thousands of users across more than 5,000 smart panels.</li><li>Extended "Building Blocks" to support brandable, reusable UI components, enabling white labeling across multiple products and partners and directly expanding the commercial reach of the platform.</li><li>Engineered support for a new generation of hardware within the existing Vue and Capacitor codebase, including a new commissioning flow and version validation logic, reflecting a consistent ability to bridge mobile software and connected hardware challenges.</li><li>Maintained compliance with evolving iOS and Android platform policies, adapting the application to meet new App Store and Google Play requirements as they were enforced.</li><li>Led technical direction for a growing frontend team, driving code standards, architecture decisions, and hands-on mentorship through code reviews and day-to-day guidance.</li><li>Regularly use GitHub Copilot and Claude as part of daily development workflow, from PR reviews and debugging to understanding complex problems and shipping cleaner code faster.</li></ul>`,
+              date: "Jan 2025 - Present"
+            },
+
+          ]
+        },
+        {
+          title: "Lumin",
+          date: "July 2019 - Present",
+          logo: new URL('../statics/lumin.png', import.meta.url).href,
+          url: "https://www.luminsmart.com/",
+          roles: [
+            {
+              title: "Senior Software Engineer",
+              description: `<ul><li>Led development of Lumin's next-generation iOS and Android application using Vue.js, Capacitor, and TypeScript, designing and building multi-step guided workflows that delivered a streamlined experience for installers and homeowners alike.</li><li>Implemented secure local network communication over HTTPS with TLS, including low-level iOS and Android certificate validation.</li><li>Created "Building Blocks," a Vue component library published as an npm module and widely adopted across the organization, standardizing UI across all applications and accelerating new project setup.</li><li>Led and mentored Lumin's intern program, guiding interns in building an internal support portal for the customer service team.</li><li>Built and maintained an Appium-based automated testing suite running nightly on-device regression tests across iOS and Android, ensuring application stability across releases.</li></ul > `,
+              date: "Oct 2021 - Jan 2025"
+            },
+            {
+              title: "UI/UX Engineer",
+              description: `<ul><li>Hired as Lumin's first dedicated frontend engineer, solely responsible for designing and building the company's first mobile application from the ground up using Vue.js and Cordova.</li><li>Built the end-to-end commissioning experience that takes a Lumin Smart Panel from out of the box to fully connected on the home network, including mDNS device discovery.</li><li>Played a key role in scaling the engineering team following launch, contributing to interviewing, hiring decisions, and onboarding of new frontend team members.</li></ul > `,
+              date: "July 2019 - Oct 2021"
+            }
+          ]
+        },
         {
           title: "Projector",
           date: "Jan 2020 - Present",
-          logo: "./statics/projector.png",
+          logo: new URL('../statics/projector.png', import.meta.url).href,
           url: "https://projectorsoft.com/",
           roles: [
             {
@@ -78,32 +102,14 @@ export default {
           ]
         },
         {
-          title: "Lumin",
-          date: "July 2019 - Present",
-          logo: "./statics/lumin.png",
-          url: "https://www.luminsmart.com/",
-          roles: [
-            {
-              title: "Senior UI/UX Engineer",
-              description: `Leads the development and design of the Lumin web and mobile applications.`,
-              date: "Oct 2021 - Present"
-            },
-            {
-              title: "UI/UX Engineer",
-              description: `Responsible for the development of the user experience and user interface for the Lumin Energy Management Platform and other Company products.`,
-              date: "July 2019 - Oct 2021"
-            }
-          ]
-        },
-        {
           title: "221b",
           date: "2018 - 2019",
-          logo: "./statics/221b.png",
+          logo: new URL('../statics/221b.png', import.meta.url).href,
           url: "http://221b-dev.surge.sh/",
           roles: [
             {
               title: "Software Developer",
-              description: `Provides application development and consulting services to clients including Johns Hopkins University, Notre Dame, and Databrary to develop products from concept to delivery while expressing complex ideas clearly and succinctly. Specializes in rapid incremental prototyping and delivering beautifully written software to our clients. Focuses on using universally agreed upon best practices and utilizing constant user-testing along the way to continually deliver high quality products. Working with frameworks such as Ember.js, Vue.js, and Nuxt.js. Proficient with Node.js to build web scrapers with puppeteer (headless Chrome node API). Presented “Decentralizing SHARE & Research” at the <a class="text-blue" href="https://cnifall2018membershipmeeting.sched.com/event/IOXb" target="_blank">Coalition for Networked Information Membership Conference</a> (CNI).`,
+              description: `<ul><li>Provided application development and consulting services to clients of all sizes, taking products from concept to delivery using agile methodology and industry best practices.</li><li>Presented "Decentralizing SHARE & Research" at the Coalition for Networked Information (CNI) Membership Conference.</li></ul> `,
               date: "Feb 2018 - July 2019"
             }
           ]
@@ -111,17 +117,17 @@ export default {
         {
           title: "The Center for Open Science",
           date: "2016 - 2018",
-          logo: "./statics/cos.png",
+          logo: new URL('../statics/cos.png', import.meta.url).href,
           url: "https://cos.io/",
           roles: [
             {
               title: "Junior Software Developer",
-              description: `Worked on the Labs team using rapid incremental prototyping to create experimental products, such as Public Access Submission System and Open Science Framework Pages.  Developed proficiency in Ember.js while interfacing with a variety of databases including Firebase and Django.`,
+              description: `<ul> <li>Built open science web applications using Ember.js, interfacing with Firebase and Django backends as part of a rapid prototyping team.</li></ul > `,
               date: "Jun 2017 - Jan 2018"
             },
             {
               title: "Developer Intern",
-              description: `Developed web applications following software design principles, collaborating with teams of developers, working with Ember.js and Django REST API frameworks.`,
+              description: `<ul> <li>Interned on the development team building web applications with Ember.js and Django REST APIs.</li></ul > `,
               date: "May 2016 - Jun 2017"
             }
           ]
@@ -129,17 +135,17 @@ export default {
         {
           title: "RIT - Information & Technology Services",
           date: "2015 - 2016",
-          logo: "./statics/rit-its.png",
+          logo: new URL('../statics/rit-its.png', import.meta.url).href,
           url: "https://www.rit.edu/its/",
           roles: [
             {
               title: "Lab Technician",
-              description: `Worked at the <i>College of Imaging Arts and Sciences</i> providing technical support to students, maintaining, fixing, upgrading computers, and providing end user support for computer labs on the Rochester Institute of Technology campus.`,
+              description: `<ul> <li>Provided technical support and computer maintenance for RIT's College of Imaging Arts and Sciences labs.</li></ul > `,
               date: "Jan 2016 - May 2016"
             },
             {
               title: "Assistant System Administrator",
-              description: `Worked at the <i>College of Science</i> providing technical support for faculty and staff at Rochester Institute of Technology. Performed backup, restore, upgrades, and software installations for Mac and Windows computers.`,
+              description: `<ul> <li>Provided technical support and performed system maintenance, backups, and software installations for faculty and staff at RIT's College of Science.</li></ul > `,
               date: "Apr 2015 - Jan 2016"
             }
           ]
@@ -149,23 +155,102 @@ export default {
         {
           title: "Rochester Institute Of Technology",
           date: "Aug 2013 - May 2017",
-          logo: "./statics/rit.png",
+          logo: new URL('../statics/rit.png', import.meta.url).href,
           url: "http://www.rit.edu/",
           roles: [
             {
               title: "B.S. Information Technology",
-              description: `Received a Bachelor's degree from Rochester Institute of Technology in Information Technology with an immersion in Web and Mobile Design and a concentration in Communications.`,
+              description: `<ul> <li>Received a Bachelor's degree from Rochester Institute of Technology in Information Technology with an immersion in Web and Mobile Design and a concentration in Communications.</li></ul > `,
               date: "Aug 2013 - May 2017"
             }
           ]
         }
       ],
       projects: [
+
+        {
+          title: "Skeeball",
+          description: "Fun project building a skeeball machine from scratch using a Raspberry Pi and a variety of sensors and motors.",
+          technologies: [
+            {
+              name: "Vue",
+              color: "#42b883",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Rasberry Pi",
+              color: "#C51A4A",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Express",
+              color: "#000000",
+              textColor: "#ffffff"
+            },
+          ],
+          images: [
+            { url: new URL('../statics/projects/skeeball.png', import.meta.url).href },
+            { url: new URL('../statics/projects/skeeball2.png', import.meta.url).href },
+            { url: new URL('../statics/projects/skeeball3.png', import.meta.url).href },
+
+          ],
+          date: "5-01-2021",
+          url: "https://github.com/Rytiggy/skeeball"
+        },
+        {
+          title: "ReliaHomes",
+          description: "A specialized version of the Lumin Energy app built for ABB's ReliaHome product.",
+          technologies: [
+            {
+              name: "Vue",
+              color: "#42b883",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Capacitor",
+              color: "#078fd0",
+              textColor: "#ffffff"
+            },
+
+          ],
+          images: [
+            { url: new URL('../statics/projects/reliahome.png', import.meta.url).href },
+          ],
+          date: "5-01-2021",
+          url: "https://reliahome.abb.com"
+        },
+        {
+          title: "Lumin Energy",
+          description: "A complete UI overhaul of the Lumin energy management application, built with Vue and Capacitor. Designed to support multiple generations of hardware.",
+          technologies: [
+            {
+              name: "Vue",
+              color: "#42b883",
+              textColor: "#ffffff"
+            },
+            {
+              name: "Capacitor",
+              color: "#078fd0",
+              textColor: "#ffffff"
+            }
+          ],
+          images: [
+            { url: new URL('../statics/projects/luminenergy.png', import.meta.url).href },
+
+          ],
+          date: "5-01-2021",
+          url: "https://lumin.energy"
+        },
         {
           title: "Lumin Dashboard",
           description:
             "Rebuilt and redesigned the Lumin energy management dashboard allowing users to control their homes circuits from a web portal or natively on IOS or Android apps.",
-          technologys: [
+          technologies: [
+            {
+              name: "Vue",
+              color: "#42b883",
+              textColor: "#ffffff"
+            },
             {
               name: "Quasar",
               color: "#027be3",
@@ -178,21 +263,11 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/lumin01.png"
-            },
-            {
-              url: "statics/projects/lumin03.png"
-            },
-            {
-              url: "statics/projects/lumin05.png"
-            },
-            {
-              url: "statics/projects/lumin02.png"
-            },
-            {
-              url: "statics/projects/lumin04.png"
-            }
+            { url: new URL('../statics/projects/lumin01.png', import.meta.url).href },
+            { url: new URL('../statics/projects/lumin03.png', import.meta.url).href },
+            { url: new URL('../statics/projects/lumin05.png', import.meta.url).href },
+            { url: new URL('../statics/projects/lumin02.png', import.meta.url).href },
+            { url: new URL('../statics/projects/lumin04.png', import.meta.url).href }
           ],
           date: "5-01-19",
           url: "https://app.luminsmart.com/"
@@ -201,28 +276,23 @@ export default {
           title: "Glance",
           description:
             "Glance is a application for use with Fitbit devices to view your blood glucose levels along with a variety of other health stats on the watch face. You can see your stats at a glance!",
-          technologys: [
+          technologies: [
             {
               name: "Fitbit SDK",
               color: "#00B0B9",
               textColor: "#ffffff"
             },
+
             {
-              name: "Javascript",
-              color: "#efd65c",
-              textColor: "#4b4848"
+              name: "React",
+              color: "#61DBFB",
+              textColor: "#000000"
             }
           ],
           images: [
-            {
-              url: "statics/projects/glance01.png"
-            },
-            {
-              url: "statics/projects/header.jpg"
-            },
-            {
-              url: "statics/projects/gallery11.jpg"
-            }
+            { url: new URL('../statics/projects/glance01.png', import.meta.url).href },
+            { url: new URL('../statics/projects/header.jpg', import.meta.url).href },
+            { url: new URL('../statics/projects/gallery11.jpg', import.meta.url).href }
           ],
           date: "Ongoing",
           url: "https://glancewatchface.com/"
@@ -231,7 +301,7 @@ export default {
           title: "Public Access Submission System",
           description:
             "The Public Access Submission System is a platform to assist researchers in complying with the policies of their funders and institutions.",
-          technologys: [
+          technologies: [
             {
               name: "Ember",
               color: "#E04E39",
@@ -244,14 +314,8 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/pass_ui.png",
-              active: "active"
-            },
-            {
-              url: "statics/projects/image1.png",
-              active: ""
-            }
+            { url: new URL('../statics/projects/pass_ui.png', import.meta.url).href, active: 'active' },
+            { url: new URL('../statics/projects/image1.png', import.meta.url).href, active: '' }
           ],
           date: "6-30-18",
           url: "https://pass.jhu.edu/"
@@ -260,7 +324,7 @@ export default {
           title: "Broken Sticks Hockey",
           description:
             "Designed and developed the Broken Sticks Hockey website to offer a great pick-up hockey experience to the Buffalo, NY area. Implemented in Bootstrap 4 and is hosted on GitHub Pages.",
-          technologys: [
+          technologies: [
             {
               name: "HTML",
               color: "#e44d26",
@@ -272,11 +336,7 @@ export default {
               textColor: "#4b4848"
             }
           ],
-          images: [
-            {
-              url: "statics/projects/bsh.png"
-            }
-          ],
+          images: [{ url: new URL('../statics/projects/bsh.png', import.meta.url).href }],
           date: "3-08-18",
           url: "http://www.brokenstickshockey.com/"
         },
@@ -284,7 +344,7 @@ export default {
           title: "OSF Pages",
           description:
             "OSF Pages is an Open Science Framework (OSF) add-on and website builder that helps OSF users build beautiful websites very quickly using their existing project details.",
-          technologys: [
+          technologies: [
             {
               name: "Ember",
               color: "#E04E39",
@@ -297,12 +357,8 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/osfPages01.gif"
-            },
-            {
-              url: "statics/projects/osfPages02.png"
-            }
+            { url: new URL('../statics/projects/osfPages01.gif', import.meta.url).href },
+            { url: new URL('../statics/projects/osfPages02.png', import.meta.url).href }
           ],
           date: "2-01-18",
           url: "https://github.com/cos-labs/osfpages"
@@ -311,7 +367,7 @@ export default {
           title: "AdMail",
           description:
             "Redesigned select pages for our client in an effort to modernize their website. Designed wireframes and focused on material design. Updated major version of Ember (v2.8 -> v3.10).",
-          technologys: [
+          technologies: [
             {
               name: "Ember",
               color: "#E04E39",
@@ -319,18 +375,10 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/smartgroups.png"
-            },
-            {
-              url: "statics/projects/groupMovement.png"
-            },
-            {
-              url: "statics/projects/namingSmartgroup.png"
-            },
-            {
-              url: "statics/projects/AccuTrak.png"
-            }
+            { url: new URL('../statics/projects/smartgroups.png', import.meta.url).href },
+            { url: new URL('../statics/projects/groupMovement.png', import.meta.url).href },
+            { url: new URL('../statics/projects/namingSmartgroup.png', import.meta.url).href },
+            { url: new URL('../statics/projects/AccuTrak.png', import.meta.url).href }
           ],
           date: "5-2-19",
           url: ""
@@ -339,7 +387,7 @@ export default {
           title: "Hotel Finder",
           description:
             "Find and locate hotels with a simple click of a button. Clean UI focused on material design built on Leaflet.js. Sharable URL's for easy sharing of hotles you find!",
-          technologys: [
+          technologies: [
             {
               name: "Quasar",
               color: "#027be3",
@@ -352,12 +400,8 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/hotelFinder01.png"
-            },
-            {
-              url: "statics/projects/hotelFinder02.png"
-            }
+            { url: new URL('../statics/projects/hotelFinder01.png', import.meta.url).href },
+            { url: new URL('../statics/projects/hotelFinder02.png', import.meta.url).href }
           ],
           date: "6-30-18",
           url: "http://hotelfinder.surge.sh/#/"
@@ -366,7 +410,7 @@ export default {
           title: "Talk About",
           description:
             "Talk About is a dynamic vue component built to be easily dropped in to any codebase. Commenting made easy!",
-          technologys: [
+          technologies: [
             {
               name: "Vue",
               color: "#41B883",
@@ -379,12 +423,8 @@ export default {
             }
           ],
           images: [
-            {
-              url: "statics/projects/talkabout02.png"
-            },
-            {
-              url: "statics/projects/talkabout.png"
-            }
+            { url: new URL('../statics/projects/talkabout02.png', import.meta.url).href },
+            { url: new URL('../statics/projects/talkabout.png', import.meta.url).href }
           ],
           date: "5-2-18",
           url: "http://talk-about.surge.sh/#/"
@@ -399,20 +439,29 @@ export default {
 p {
   font-size: 16px;
 }
+
 .homepage {
   max-width: 1140px;
   margin: auto;
 }
+
 .email {
-  unicode-bidi: bidi-override;
-  direction: rtl;
+  /* unicode-bidi: bidi-override;
+  direction: rtl; */
   text-transform: lowercase;
 }
+
 .pull-middle {
   position: absolute;
   top: 50%;
   height: 100vh;
   transform: translateY(-50%);
   width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0em;
+  padding-left: 2em;
 }
 </style>

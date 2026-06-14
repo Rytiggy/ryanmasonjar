@@ -113,7 +113,7 @@ module.exports = function (ctx) {
         theme_color: "#027be3",
         icons: [
           {
-            src: "statics/icons/favicon.png",
+            src: "/statics/icons/favicon.png",
             type: "image/png"
           }
         ]
