@@ -4,13 +4,14 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import path from 'path'
 
 export default defineConfig({
-    plugins: [
-        vue({ template: { transformAssetUrls } }),
-        quasar()
-    ],
-    resolve: {
-        alias: {
-            '@': path.resolve(__dirname, './src')
-        }
+  base: '/',
+  plugins: [
+    vue({ template: { transformAssetUrls } }),
+    quasar()
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
     }
+  }
 })
