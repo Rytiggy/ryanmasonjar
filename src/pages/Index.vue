@@ -13,7 +13,7 @@
         </q-chip>
 
         <p class="about-me text-weight-light text-blue-grey-9">
-          Principal software engineer with a deep passion for building applications that solve real problems for real
+          Principal software engineer with a passion for building applications that solve real problems for real
           people. Deep expertise across web, iOS, and Android, with a proven track record of taking products from
           concept to delivery, including multiple apps shipped to the App Store and Google Play. Brings experience
           designing interfaces that help people understand and manage complex information. Works independently,
@@ -96,7 +96,7 @@ export default {
           roles: [
             {
               title: "Senior Software Engineer",
-              description: `Responsible for the frontend development of the Projector web extension.`,
+              description: `<ul><li>Responsible for the frontend development of the Projector web extension.</li></ul>`,
               date: "Jan 2020 - Present"
             }
           ]
